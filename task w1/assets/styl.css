@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+/* form styling */
+
+form {
+    width: 300px;
+    margin: 50px auto;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 182, 182);
+}
+
+textarea {
+    resize: vertical;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form button {
+    background-color: orangered;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(255, 166, 0);
+    transition: 0.5s;
+}
+
+
+.form{
+    display: flex;
+    column-gap: 40px;
+}
+
+/*Upload Image*/
+
+form.upload-image{
+    margin-top: 20px
+}
+
+form.group-upload{
+    width: 100%;
+}
+
+form.flex-upload{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+form.flex-upload img{
+    margin: auto 20px;
+    width: 6%;
+    height: 6%;
+    cursor: pointer;
+}
+
+form.flex-upload p{
+    margin: auto 0;
+    padding: 8px 25px;
+    background-color: orangered;
+    border-radius: 5px;
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Checkbox */
+.flex-check {
+    display: flex;
+    margin-top: 10px;
+}
+
+.flex-check .flex-box{
+    width: 50%;
+    display: flexbox;
+    margin-right: 37%;
+}
+
+.flex-check .flex-box label {
+    display: flex;
+    width: 50%;
+    padding-right: 50%;
+}
+
+.flex-check .flex-box label input{
+    box-shadow: none;
+}
+
+/* card */
+
+.card{
+    width: 20%;
+    display: block;
+    margin-top: 10px;
+}
+
+

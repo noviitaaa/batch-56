@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/navbar.css"/>
+    <link rel="stylesheet" href="./assets/css/styl.css" />
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Personal Website</title>
+  </head>
+  <body>
+      <!-- navbar -->
+        <nav>
+            <div class="left">
+                <ul>
+                    <img
+                    class="logo"
+                    src="./assets/image/logo.png"
+                    alt="logo-image"/>
+
+                    <li class="active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <a href="./contact.html">Contact Me</a>
+                <button class="btn-hamburger" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <ul class="hamburger-container hamburger-hide" id="hamburger-container" style="list-style-type: none;">
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./index.html">Home</li>
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./blog.html">blog</li>
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./contact.html">Contact Me</li>
+        </ul>
+
+        <script>
+          function toggleNavbar(){
+              const element = document.getElementById("hamburger-container")
+              element.classList.toggle("hamburger-container")
+          }
+      </script>
+
+<!-- end of navbar -->
+
+    <!-- formulir -->
+    <form>
+      <div>
+        <label for="nameInput">Name</label>
+        <input
+          id="nameInput"
+          type="text"
+          required
+          placeholder="input your name"
+        />
+      </div>
+
+      <div>
+        <label for="emailInput">Email</label>
+        <input id="emailInput" type="email" />
+      </div>
+
+      <div>
+<label for="numberInput">Telephone</label>
+<input id="numberInput" type="phone">
+      </div>
+
+      <div>
+        <label for="Subject">Subject</label>
+        <select id="Subject">
+          <option hidden>Select Option!</option>
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Fullstack Developer</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="description">Description</label> <textarea id="description"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

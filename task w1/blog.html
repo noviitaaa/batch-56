@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="./assets/styl.css" />
+    
+    </head>
+
+    <body>
+        <nav>
+            <div class="left">
+                <ul>
+                    <img
+                    class="logo"
+                    src="./assets/logo.png"
+                    alt="logo-image"/>
+
+                    <li class="active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <a href="./contact.html">Contact Me</a>
+            </div>
+        </nav>
+        
+<!-- blog -->
+<!-- formulir -->
+
+<form onsubmit="addBlog(event)">
+    <div>
+        <label for="nameInput">Project Name</label>
+        <input id="nameInput"
+        type="text">
+    </div>
+    <div class="dateInput">
+        <label for="dateInput">Start Date</label>
+        <input id="dateInput";
+        type="datetime-local"/>
+    </div>
+    <div>
+        <label for="dateInput">End Date</label>
+        <input id="dateInput";
+        type="datetime-local"/>
+    </div>
+    </div>
+        <div>
+            <label>Description</label>
+            <textarea id="boxProject"></textarea>
+        </div>
+    <div>
+        <label for="">Technologies</label>
+        <div class="flex-check">
+            <div class="flex-box">
+                <label for="swift"><input type="checkbox" id="swift">Swift</label>
+                <label for="ruby"><input type="checkbox" id="ruby">Ruby</label>
+            </div>
+            <div class="flex-box">
+                <label for="phyton"><input type="checkbox" id="phyton">Phyton</label>
+                <label for="javascript"><input type="checkbox" id="javascript">Javascript</label>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div>
+            <label for="upload">Upload Image</label>
+            <input id="upload" type="file"/>
+            </div>
+    </div>
+    </div>
+    <div class="button-group">
+        <button>Post Blog</button>
+    </div>
+
+    <!-- card -->
+
+    <div class="card" style="width: 270px; margin: 20px 10px; box-shadow: 0px 0px 5px; border-radius: 10px;">
+            <a href="blog.html" target="_blank">
+                <img src="./assets/attach.webp" alt="" style="width: 50px; border-radius: 10px;">
+                <h1 style="margin: 10px 20px;"></h1>
+                <p style="margin: 10px 20px;"></p>
+                <p style="margin: 10px 20px;"></p>
+            </a>
+            <h1>${show[i].project}</h1>
+            <p>Durasi</p>
+            <p>${show[i].description}</p>
+            <div class="image-card">
+                <img src="./assets/ikon instagram.jpg" alt="" style="width: 10px;" > 
+                <img src="./assets/ikon message.jpg" alt="" style="width: 10px;">
+                <img src="./assets/HTML brands solid icon.png" alt="" style="width: 10px;">
+            </div>
+            <div class="button-card">
+                <button class="edit-card">Edit</button>
+                <button class="delete-card">Delete</button>
+            </div>
+        </div>
+
+</form>
+</html>

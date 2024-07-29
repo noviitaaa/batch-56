@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="./assets/css/navbar.css"/>
+        <link rel="stylesheet" href="./assets/css/blog.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <style>
+            .container {
+                display: flex; 
+                flex-direction: row; 
+                padding: 200px;
+            }
+            @media  screen and (max-width: 900px) {
+                .container {
+                flex-direction: column; 
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="left">
+                <ul>
+                    <img
+                    class="logo"
+                    src="./assets/image/logo.png"
+                    alt="logo-image"/>
+
+                    <li class="active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <a href="./contact.html">Contact Me</a>
+                <button class="btn-hamburger" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <ul class="hamburger-container hamburger-hide" id="hamburger-container" style="list-style-type: none;">
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./index.html">Home</li>
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./blog.html">blog</li>
+            <li style="border: 10px solid white; text-align: center; background-color: gray; padding: 10px; color: white; font-weight: bold; font-size: x-large;">
+                <a href="./contact.html">Contact Me</li>
+        </ul>
+
+<div class="container">
+        <div 
+        style="
+        border: 1px black solid;
+        width: 350px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 20px;
+        box-shadow: 0px 0px 30px gray;">
+        
+        <img 
+        src="./assets/image/WhatsApp Image 2024-07-15 at 13.14.24.jpeg"
+        style="width: 100%; border-radius: 10px;"/>
+        <h1>NOVITA INDAH SARI</h1>
+        <P style="display: none;">Seorang Full Stack Developer Profesional</P>
+<table
+style="border: 1px black solid; border-collapse: collapse; width: 100%;">
+<tr>
+    <th style="border: 1px black solid;">Belajar HTML</th>
+    <th style="border: 1px black solid;">Years</th>
+</tr>
+<tr>
+    <td style="border: 1px rgb(0, 0, 0) solid; text-align: center;">
+        saya Novita Indah Sari berusia 24 Tahun berasal dari Jawa Tengah
+    </td>
+    <td style="border: 1px black solid; text-align: center;">2024</td>
+</tr>
+</table>
+        </div>
+
+        <div style="padding: 30px;">
+            <h3 style="text-align: center;">what i do</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque doloremque minima, vitae, iure nihil, ad in fuga perferendis nisi provident recusandae excepturi voluptatum rerum! Suscipit ratione eum officiis quisquam saepe.
+            </p>
+        </div>
+</div>
+
+    <script>
+        function toggleNavbar(){
+            const element = document.getElementById("hamburger-container")
+            element.classList.toggle("hamburger-container")
+        }
+    </script>
+</body>
+</html>
